@@ -1,3 +1,6 @@
+Reskinned By @Brotatochips11
+Discord brotatochips11
+
 # ps-inventory
 Project-Sloth's FiveM Inventory System Redesigned to Look Like and Feel like NoPixel 4.0
 
