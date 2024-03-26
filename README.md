@@ -25,4 +25,38 @@ For those who've used the previous version, I've included descriptions/tags abov
 #### Client-Side LUA
 
 ```lua
--- Insert the LUA snippets here
+-- QBCore.Functions.TriggerCallback('inventory:server:ConvertQuality', function(data)
+  inventory = data.inventory
+  other = data.other
+  SendNUIMessage({
+  action = "open",
+  inventory = inventory,
+  slots = Config.MaxInventorySlots,
+  other = other,
+  maxweight = Config.MaxInventoryWeight,
+  Ammo = PlayerAmmo,
+  maxammo = Config.MaximumAmmoValues,
+  Name = PlayerData.charinfo.firstname .." ".. PlayerData.charinfo.lastname .." - [".. GetPlayerServerId(PlayerId()) .."]", 
+  pName = PlayerData.charinfo.firstname .. PlayerData.charinfo.lastname, 
+  pNumber = PlayerData.charinfo.phone,
+  pCID = PlayerData.citizenid,
+  pID = GetPlayerServerId(PlayerId()),
+})
+
+QBCore.Functions.TriggerCallback('inventory:server:ConvertQuality', function(data)
+  inventory = data.inventory
+  other = data.other
+  SendNUIMessage({
+  action = "open",
+  inventory = inventory,
+  slots = Config.MaxInventorySlots,
+  other = other,
+  maxweight = Config.MaxInventoryWeight,
+  Ammo = PlayerAmmo,
+  maxammo = Config.MaximumAmmoValues,
+  Name = PlayerData.charinfo.firstname .." ".. PlayerData.charinfo.lastname .." - [".. GetPlayerServerId(PlayerId()) .."]", 
+  pName = PlayerData.charinfo.firstname .. PlayerData.charinfo.lastname, 
+  pNumber = PlayerData.charinfo.phone,
+  pCID = PlayerData.citizenid,
+  pID = GetPlayerServerId(PlayerId()),
+})
