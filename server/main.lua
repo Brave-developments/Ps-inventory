@@ -478,9 +478,8 @@ local function hasCraftItems(source, CostItems, amount)
 end
 
 local function IsVehicleOwned(plate)
-	local result = MySQL.scalar.await('SELECT 1 from player_vehicles WHERE plate = ?', { plate })
-	local result2 = MySQL.scalar.await('SELECT 1 from keep_garage WHERE plate = ?', { plate })
-	return result or result2
+    local result = MySQL.scalar.await('SELECT 1 from player_vehicles WHERE plate = ?', {plate})
+    return result
 end
 
 -- Shop Items
