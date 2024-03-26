@@ -1,3 +1,9 @@
+
+
+<img width="420" alt="1111" src="https://github.com/Brave-developments/Ps-inventory/assets/89262662/c1a6d5f2-7cb8-44d7-9909-2389db1a43de">
+
+
+
 # Project-Sloth's FiveM Inventory System
 
 Reskinned by @Brotatochips11 - Discord: brotatochips11
